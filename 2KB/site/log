@@ -1,0 +1,157 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building core 5.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 85 resources
+[INFO] 
+[INFO] --- jrebel-maven-plugin:1.1.5:generate (generate-rebel-xml) @ core ---
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ core ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/nc/broadleaf/2KB/core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ core ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ core ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ core ---
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (clean-tomcat-conf) @ core ---
+[INFO] Deleting /home/nc/broadleaf/2KB/core/target (includes = [tomcat/], excludes = [])
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-resources) @ core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ core ---
+[INFO] Installing /home/nc/broadleaf/2KB/core/target/core-5.0.jar to /root/.m2/repository/com/mycompany-community/core/5.0/core-5.0.jar
+[INFO] Installing /home/nc/broadleaf/2KB/core/pom.xml to /root/.m2/repository/com/mycompany-community/core/5.0/core-5.0.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.946 s
+[INFO] Finished at: 2017-04-11T11:23:48+08:00
+[INFO] Final Memory: 18M/43M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building site 5.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:copy (copy-agent) @ site ---
+[INFO] Configured Artifact: org.springframework:spring-instrument:4.1.9.RELEASE:jar
+[INFO] org.springframework:spring-instrument:4.1.9.RELEASE:jar already exists in /home/nc/broadleaf/2KB/site/target/agents
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.173 s
+[INFO] Finished at: 2017-04-11T11:23:55+08:00
+[INFO] Final Memory: 10M/25M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building site 5.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.8:run (default-cli) @ site ---
+[INFO] No Ant target defined - SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.758 s
+[INFO] Finished at: 2017-04-11T11:24:01+08:00
+[INFO] Final Memory: 17M/41M
+[INFO] ------------------------------------------------------------------------
+Listening for transport dt_socket at address: 8085
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building site 5.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> tomcat7-maven-plugin:2.2:run-war (default-cli) > package @ site >>>
+[INFO] 
+[INFO] --- properties-maven-plugin:1.0.0:read-project-properties (default) @ site ---
+[INFO] Quiet processing - ignoring properties cannot be loaded from File: /home/nc/broadleaf/2KB/site/database.properties
+[INFO] Quiet processing - ignoring properties cannot be loaded from File: /root/.database.properties
+[INFO] Quiet processing - ignoring properties cannot be loaded from File: /root/com.mycompany-community.database.properties
+[INFO] 
+[INFO] --- keytool-maven-plugin:1.5:generateKeyPair (generateKeyPair) @ site ---
+[INFO] Skip execution, keystore already exists at /home/nc/broadleaf/2KB/site/target/mycompany/WEB-INF/blc-example.keystore
+[INFO] Disabled
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ site ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 15 resources
+[INFO] 
+[INFO] --- jrebel-maven-plugin:1.1.5:generate (generate-rebel-xml) @ site ---
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ site ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ site ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/nc/broadleaf/2KB/site/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ site ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ site ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-war-plugin:2.6:war (default-war) @ site ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [site] in [/home/nc/broadleaf/2KB/site/target/mycompany]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/home/nc/broadleaf/2KB/site/src/main/webapp]
+[INFO] Webapp assembled in [1954 msecs]
+[INFO] Building war: /home/nc/broadleaf/2KB/site/target/mycompany.war
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:copy (copy-agent) @ site ---
+[INFO] Configured Artifact: org.springframework:spring-instrument:4.1.9.RELEASE:jar
+[INFO] org.springframework:spring-instrument:4.1.9.RELEASE:jar already exists in /home/nc/broadleaf/2KB/site/target/agents
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-resources) @ site ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (clean-tomcat-conf) @ site ---
+[INFO] Deleting /home/nc/broadleaf/2KB/site/target (includes = [tomcat/], excludes = [])
+[INFO] 
+[INFO] <<< tomcat7-maven-plugin:2.2:run-war (default-cli) < package @ site <<<
+[INFO] 
+[INFO] --- tomcat7-maven-plugin:2.2:run-war (default-cli) @ site ---
+[INFO] Running war on http://localhost:8086/
+[INFO] Creating Tomcat server configuration at /home/nc/broadleaf/2KB/site/target/tomcat
+[INFO] Coping additional tomcat config files
+[INFO]  copy context.xml
+[INFO] create webapp with contextPath: 
+[ WARN] 11:25:07 RuntimeEnvironmentPropertiesConfigurer - Unable to determine runtime environment, using default environment 'development'
+[ WARN] 11:25:21 AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [blSandBoxElements]; using defaults.
+[ WARN] 11:25:40 SolrResourceLoader - Can't find (or read) directory to add to classloader: lib (resolved as: /tmp/root/solrhome-5.3.1/lib).
+[SUPPORT] 11:25:46 ModuleLifecycleLoggingBean - Menu - LOADING
+[ WARN] 11:25:56 RuntimeEnvironmentPropertiesConfigurer - Unable to determine runtime environment, using default environment 'development'
+[ WARN] 11:26:24 GoogleUniversalAnalyticsProcessor - No trackers were found, not outputting Google Analytics script. Set the googleAnalytics.webPropertyId and/or the googleAnalytics.masterWebPropertyId system properties to output Google Analytics
+[ WARN] 11:26:31 GoogleUniversalAnalyticsProcessor - No trackers were found, not outputting Google Analytics script. Set the googleAnalytics.webPropertyId and/or the googleAnalytics.masterWebPropertyId system properties to output Google Analytics
+[ WARN] 11:26:39 GoogleUniversalAnalyticsProcessor - No trackers were found, not outputting Google Analytics script. Set the googleAnalytics.webPropertyId and/or the googleAnalytics.masterWebPropertyId system properties to output Google Analytics
+[ WARN] 11:28:36 GoogleUniversalAnalyticsProcessor - No trackers were found, not outputting Google Analytics script. Set the googleAnalytics.webPropertyId and/or the googleAnalytics.masterWebPropertyId system properties to output Google Analytics
+[ WARN] 11:29:11 GoogleUniversalAnalyticsProcessor - No trackers were found, not outputting Google Analytics script. Set the googleAnalytics.webPropertyId and/or the googleAnalytics.masterWebPropertyId system properties to output Google Analytics
+[ WARN] 11:29:38 GoogleUniversalAnalyticsProcessor - No trackers were found, not outputting Google Analytics script. Set the googleAnalytics.webPropertyId and/or the googleAnalytics.masterWebPropertyId system properties to output Google Analytics
+[ WARN] 11:41:31 GoogleUniversalAnalyticsProcessor - No trackers were found, not outputting Google Analytics script. Set the googleAnalytics.webPropertyId and/or the googleAnalytics.masterWebPropertyId system properties to output Google Analytics
+[ WARN] 12:49:59 GoogleUniversalAnalyticsProcessor - No trackers were found, not outputting Google Analytics script. Set the googleAnalytics.webPropertyId and/or the googleAnalytics.masterWebPropertyId system properties to output Google Analytics
+[ WARN] 12:50:30 GoogleUniversalAnalyticsProcessor - No trackers were found, not outputting Google Analytics script. Set the googleAnalytics.webPropertyId and/or the googleAnalytics.masterWebPropertyId system properties to output Google Analytics
+[ WARN] 12:50:58 NullMessageCreator - NullMessageCreator is defined -- specify a real message creator to send emails
+[ WARN] 12:51:13 GoogleUniversalAnalyticsProcessor - No trackers were found, not outputting Google Analytics script. Set the googleAnalytics.webPropertyId and/or the googleAnalytics.masterWebPropertyId system properties to output Google Analytics
+[ WARN] 12:51:26 GoogleUniversalAnalyticsProcessor - No trackers were found, not outputting Google Analytics script. Set the googleAnalytics.webPropertyId and/or the googleAnalytics.masterWebPropertyId system properties to output Google Analytics
+[ WARN] 12:54:40 GoogleUniversalAnalyticsProcessor - No trackers were found, not outputting Google Analytics script. Set the googleAnalytics.webPropertyId and/or the googleAnalytics.masterWebPropertyId system properties to output Google Analytics
