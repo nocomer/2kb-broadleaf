@@ -46,7 +46,7 @@ public class SendOrderConfirmationEmailActivity extends BaseActivity<ProcessCont
     @Resource(name = "blOrderConfirmationEmailInfo")
     protected EmailInfo orderConfirmationEmailInfo;
     
-    @Override
+  /*  @Override @nocome*/
     public ProcessContext<CheckoutSeed> execute(ProcessContext<CheckoutSeed> context) throws Exception {
         Order order = context.getSeedData().getOrder();
         HashMap<String, Object> vars = new HashMap<String, Object>();

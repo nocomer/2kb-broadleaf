@@ -25,10 +25,10 @@
          for secure information such as payment info when in a PCI compliant situation, and/or for CMS
          if you wish to store content in a separate database. -->
 
-    <jee:jndi-lookup id="webDS" jndi-name="jdbc/web"/>
+    <jee:jndi-lookup id="webDS" jndi-name="java:comp/env/jdbc/web"/>
 
-    <jee:jndi-lookup id="webSecureDS" jndi-name="jdbc/secure"/>
+    <jee:jndi-lookup id="webSecureDS" jndi-name="java:comp/env/jdbc/secure"/>
 
-    <jee:jndi-lookup id="webStorageDS" jndi-name="jdbc/storage"/>
+    <jee:jndi-lookup id="webStorageDS" jndi-name="java:comp/env/jdbc/storage"/>
     
 </beans>

@@ -63,6 +63,9 @@
     <!-- Default locale set -->
     <bean id="localeResolver" class="org.broadleafcommerce.common.web.BroadleafCookieLocaleResolver" />
     
+    <!-- ADD -->
+    <!-- <mvc:default-servlet-handler/> -->
+    
     <!-- Tell Spring to not try to map things in these directories to controllers -->
     <!-- Order must be set to supercede the handler configured by the mvc:annotation-driven annotation -->
     <mvc:resources order="-10" location="/img/, classpath:/common_style/img/" mapping="/img/**" />
@@ -90,5 +93,5 @@
     
     <!-- This validator will additionally require state on shipping addresses -->
     <bean id="blShippingInfoFormValidator" class="org.broadleafcommerce.core.web.checkout.validator.USShippingInfoFormValidator" />
-    
+  
 </beans>

@@ -200,7 +200,7 @@
                     </configuration>
                     <dependencies>
                         <!-- 
-			<dependency>
+						<dependency>
                             <groupId>org.hsqldb</groupId>
                             <artifactId>hsqldb</artifactId>
                             <version>${hsqldb.version}</version>
@@ -508,6 +508,14 @@
                 <type>jar</type>
                 <scope>provided</scope>
             </dependency>
+            
+            <dependency>  
+		    <groupId>mysql</groupId>  
+		    <artifactId>mysql-connector-java</artifactId>  
+		    <version>5.1.26</version>  
+		    <type>jar</type>  
+		    <scope>compile</scope>  
+			</dependency> 
         </dependencies>
     </dependencyManagement>
     <modules>
