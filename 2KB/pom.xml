@@ -210,7 +210,7 @@
 			<dependency>
   			  <groupId>mysql</groupId>
  			   <artifactId>mysql-connector-java</artifactId>
-			    <version>5.1.26</version>
+			    <version>8.0.16</version>
 			</dependency>
                        <dependency>
                             <groupId>org.apache.tomcat</groupId>
@@ -512,7 +512,7 @@
             <dependency>  
 		    <groupId>mysql</groupId>  
 		    <artifactId>mysql-connector-java</artifactId>  
-		    <version>5.1.26</version>  
+		    <version>8.0.16</version>  
 		    <type>jar</type>  
 		    <scope>compile</scope>  
 			</dependency> 
